@@ -2,7 +2,16 @@
 layout: default
 title: Ken Ashley
 ---
-# Home
+## Welcome!
+
+Check out the tabs above to view some of my projects or learn more about me.
+
+----
+Profile Pic
+
+### Kenneth Ashley
+----
+### Aspiring Software Engineer
 <!--
 ## Welcome to GitHub Pages
 
