@@ -7,4 +7,4 @@ title: Computer Vision Maze Game
 
 Coming soon!
 
-**[Source available here](http://github.com/kashley920/)**
+**[Source available here](http://github.com/kashley920/CV-Maze)**
