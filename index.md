@@ -7,12 +7,13 @@ title: Ken Ashley
 Check out the tabs above to view some of my projects or learn more about me.
 
 ----
-Profile Pic
+![Profile Pic](/assets/images/profilepic.png)
 
 ### Kenneth Ashley
 ----
 ### Aspiring Software Engineer
-<!--
+
+<!-- Markdown syntax guide
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/kashley920/kashley920.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
