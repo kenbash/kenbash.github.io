@@ -19,11 +19,11 @@ Here is what the main gameboard looks like. Players take turns moving their piec
 starting with white.
 
 ![Movement Example](/assets/images/thumbnail_chess.PNG)  
-To move a piece, simply click it and a yellow box will highlight what squares the
+To move a piece, simply click it and yellow boxes will highlight what squares the
 piece can move to, along with the piece itself. All possible movements for a piece
-are given, along with more complex movements like castling and _en passant_.
+are given, including more complex movements like castling and _en passant_.
 
-You can click any of the squares to move to it and complete your turn, or click the piece 
+You can click any of the squares to move to it and complete your turn, or click the piece
 again to deselect it.
 
 ### Check System
@@ -32,7 +32,7 @@ When the player is in check, only moves that are legal will be highlighted in ye
 That is, if a move will get your king out of check, that move may be selected.
 
 ![Check Example](/assets/images/chess03.PNG)  
-If a move is not legal, meaning your king will stay in check after the move, the square
+If a move is not legal, meaning your king will be in check after the move, the square
 will be highlighted with red and be blocked from movement.
 
 ### Winning
