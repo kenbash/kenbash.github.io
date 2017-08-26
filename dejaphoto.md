@@ -8,3 +8,15 @@ title: Deja Photo
 Coming soon!
 
 **Source available on request**
+
+## Features
+
+### Log In
+
+### Home Screen
+
+### Wallpaper Changer
+
+### Sharing Photos
+
+### Settings
