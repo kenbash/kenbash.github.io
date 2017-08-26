@@ -12,8 +12,8 @@ completing the game, I made a very simple AI as a fun addition to the project.
 **[Source available here](http://github.com/kashley920/Chess-Game)**
 
 ## Features
-### Game Board
 
+### Game Board
 ![Game Board](/assets/images/chess01.PNG)  
 Here is what the main gameboard looks like. Players take turns moving their pieces,
 starting with white.
