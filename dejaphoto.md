@@ -22,26 +22,26 @@ has been logged in before on that phone, the account will automatically sign in 
 ### Home Screen
 ![Home Screen](/assets/images/thumbnail_dejaphoto.png)  
 Here is the main screen of the app. At the top we can see buttons to access a friends list and settings. In the center we see a picture
-which has been uploaded to Deja Photo, which I will explain below. If you swipe up on the homescreen, it will open the default camera app 
-and put any photos taken in Deja Photo.  
+which has been uploaded to Deja Photo, which I will explain below. If you swipe up on the homescreen, it will open the default camera 
+app and put any photos taken in Deja Photo.  
 
-Swiping left or right will let you look at other photos that are part of Deja Photo, as well as their associated information at the bottom.
-At the very bottom we can see a text field giving the location the photo was taken, determined automatically or set as a custom value, as 
-well as the release, sharing, and karma buttons that will be explained later.
+Swiping left or right will let you look at other photos that are part of Deja Photo, as well as their associated information at the 
+bottom. At the very bottom we can see a text field giving the location the photo was taken, determined automatically or set as a custom 
+value, as well as the release, sharing, and karma buttons that will be explained later.
 
 ### Wallpaper Changer
 ![Lock Screen](/assets/images/dejaphoto_lockscreen.png)  
-Upon exiting the app, the user's phone's wallpaper will change to the image that was open. From there, a background service will run that 
-will change the photo at a set interval or after moving 500 feet. The next photo that will be chosen is determined by an algorithm that
-uses configurable options including location, time of day, karma, and more. This is where the name Deja Photo comes from, as the photos
-will remind you of past events relative to the present.
+Upon exiting the app, the user's phone's wallpaper will change to the image that was open. From there, a background service will run 
+that will change the photo at a set interval or after moving 500 feet. The next photo that will be chosen is determined by an algorithm 
+that uses configurable options including location, time of day, karma, and more. This is where the name Deja Photo comes from, as the 
+photos will remind you of past events relative to the present.
 
 ### Photo Options
 ![Alternate Photo](/assets/images/dejaphoto_alt.png)  
 Here is another photo in Deja Photo. In this, the three buttons seen in the previous photo are in different states.   
 
-The **release** button has been pressed and now shows an undo symbol. The release button removes photos from the wallpaper cycle, and later
-deletes them from Deja Photo if it is not undone.  
+The **release** button has been pressed and now shows an undo symbol. The release button removes photos from the wallpaper cycle, and 
+later deletes them from Deja Photo if it is not undone.  
 
 The **sharing** button has been pressed and now indicates that the photo is blocked from sharing. This prevents friends from seeing that
 photo, and can be toggled by pressing again.  
@@ -54,14 +54,21 @@ name for all users with that photo.
 
 ### Friends
 ![Friends List](/assets/images/dejaphoto_friendslist.png)  
-This page gives a list of the user's friends to share photos with.
+This page gives a list of the user's friends to share photos with. Friends can be added/removed using their account email at the top. 
+When two users are both on each others' friends lists, they will be able to see each other's photos if sharing is enabled.
 
 ### Settings
 ![Settings](/assets/images/dejaphoto_settings.png)  
-Explanation coming soon!
+In the settings menu we first see the Choose Photo button, which is used to upload new photos to Deja Photo. From there, we can see
+various options to enable/disable which photos to see in Deja Photo. The user can also choose to disable their sharing completely.  
+
+Next are the options for the wallpaper cycle that will run in the background. The user can select the length of the interval between
+photos, as well as which values to consider in the algorithm to determine the next photo.
 
 ![Upload Photo](/assets/images/dejaphoto_albums.png)  
-Uploads to a Firebase database.
+After selecting to choose a photo, this screen will open using the phone's default album application. After selecting a photo to add, 
+the photo will be uploaded to a Firebase database along with their other user data. The user's friends' photos are also downloaded
+from the database to a separate album. All of these photos are viewable from the main screen.
 
 ## How to Run
 
