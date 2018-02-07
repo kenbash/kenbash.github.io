@@ -7,7 +7,7 @@ title: Ken Ashley
 Check out the tabs above to view some of my projects or learn more about me.
 
 ----
-![Profile Pic](/assets/images/profilepic.png)
+<!-- ![Profile Pic](/assets/images/profilepic.png) -->
 
 ### Kenneth Ashley
 ----
