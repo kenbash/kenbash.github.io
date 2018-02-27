@@ -10,10 +10,6 @@ Check out the tabs above to view some of my projects or learn more about me.
 ![Profile Pic](/assets/images/profilepic.jpg)  
 (Still working on a professional profile pic. For now, enjoy this dog)
 
-### Kenneth Ashley
-----
-### Aspiring Software Engineer
-
 <!-- Markdown syntax guide
 ## Welcome to GitHub Pages
 
