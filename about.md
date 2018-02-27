@@ -5,4 +5,5 @@ title: About
 ## About Me
 Coming soon!
 
-<https://www.linkedin.com/in/ken-ashley/>
+**[LinkedIn](https://www.linkedin.com/in/ken-ashley/)**  
+**[Resume](/Resume.pdf)**
