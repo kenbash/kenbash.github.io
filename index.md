@@ -4,7 +4,7 @@ title: Ken Ashley
 ---
 ## Welcome!
 
-Check out the tabs above to view some of my projects or learn more about me.
+Click the tabs above to learn more about me and my projects, or check out some of my favorite sites __[here](/links)__.
 
 ----
 ![Profile Pic](/assets/images/profilepic.jpg)  
