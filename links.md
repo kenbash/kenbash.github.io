@@ -3,4 +3,4 @@ layout: links
 title: Favorite Sites
 ---
 
-Also check out my review of translating math to code __[here](/critique)!__
+Also check out my review of translating math to code __[here](/links/critique)!__
