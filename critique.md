@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /links/critique
 title: Translating Math Into Code
 ---
 
