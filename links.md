@@ -1,5 +1,6 @@
 ---
 layout: links
+permalink: \links
 title: Favorite Sites
 ---
 
