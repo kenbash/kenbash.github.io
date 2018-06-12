@@ -8,7 +8,6 @@ Click the tabs above to learn more about me and my projects, or check out some o
 
 ----
 ![Profile Pic](/assets/images/profilepic.jpg)  
-(Still working on a professional profile pic. For now, enjoy this dog)
 
 <!-- Markdown syntax guide
 ## Welcome to GitHub Pages
