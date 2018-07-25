@@ -9,7 +9,7 @@ Click the tabs above to learn more about me and my projects.
 ----
 ![Profile Pic](/assets/images/profilepic.jpg)  
 
-<!-- Markdown syntax guide
+<!-- Markdown syntax reference
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/kashley920/kashley920.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
