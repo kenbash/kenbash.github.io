@@ -1,43 +1,136 @@
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes slide-up {
+  0% {
+    opacity: 0.5;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
-.App {
+.app {
   text-align: center;
 }
 
-.App-header {
+.app-header {
+  height: 350px;
+  width: 100%;
+  color: #f6f5f5;
+}
+
+.app-header:before,
+.app-header:after {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  z-index: -1;
+}
+
+.app-header:before {
+  background: #2766b9 url("./assets/images/geisel.jpg") no-repeat center
+    center/cover;
+  position: fixed;
+}
+
+.app-header:after {
+  background: #2766b9;
+  opacity: 0.5;
+  position: absolute;
+}
+
+.header-top {
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-title {
+  animation: slide-up 1s ease-out;
+  border: 3px solid #f6f5f5;
+  width: fit-content;
+  padding: 40px;
+  margin-bottom: 0;
+  align-self: flex-end;
+}
+
+.app-main {
+  background: #f6f5f5;
+  padding: 2em;
+}
+
+.container {
+  max-width: 1000px;
+  text-align: center;
+}
+
+.intro h1 {
+  color: #6e9fc6;
+}
+
+.intro p {
+  color: #2766b9;
+  text-align: left;
+  line-height: 2.2;
+  padding: 2em 0;
+}
+
+.intro a {
+  color: #5e97d2;
+}
+
+h2 {
+  color: #6e9fc6;
+  overflow: hidden;
+  text-align: center;
+}
+
+h2:before,
+h2:after {
+  /* background-color: #aeaaad; */
+  background-color: #5e97d2;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+h2:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+h2:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+.project {
+  background: orange;
+  height: 200px;
+  width: 250px;
+  margin: 5px;
+}
+
+footer {
   height: 100px;
-  padding: 20px;
-  color: white;
-  background: #212121;
-  background: -moz-linear-gradient(top, #373737, #212121);
-  background: -webkit-linear-gradient(top, #373737, #212121);
-  background: -ms-linear-gradient(top, #373737, #212121);
-  background: -o-linear-gradient(top, #373737, #212121);
-  background: linear-gradient(to top, #373737, #212121);
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-title {
-  font-size: 2.5em;
-}
-
-.App-main {
-  background: #f2f2f2;
-  padding: 20px;
-}
-
-.App-footer {
-  height: 50px;
-  background: #212121;
+  background: #2766b9;
 }
