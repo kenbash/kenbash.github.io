@@ -1,0 +1,168 @@
+@keyframes slide-up {
+  0% {
+    opacity: 0.5;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.home {
+  text-align: center;
+}
+
+.home-header {
+  height: 350px;
+  width: 100%;
+  color: #f6f5f5;
+}
+
+.home-header:before,
+.home-header:after {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  z-index: -1;
+}
+
+.home-header:before {
+  background: #2766b9 url("../../assets/images/geisel.jpg") no-repeat center
+    center/cover;
+  position: fixed;
+}
+
+.home-header:after {
+  background: #2766b9;
+  opacity: 0.5;
+  position: absolute;
+}
+
+.header-top {
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-title {
+  animation: slide-up 1s ease-out;
+  border: 3px solid #f6f5f5;
+  width: fit-content;
+  padding: 40px;
+  margin-bottom: 0;
+  align-self: flex-end;
+}
+
+.home-main {
+  background: #f6f5f5;
+  padding: 2em;
+}
+
+.container {
+  max-width: 1000px;
+  text-align: center;
+}
+
+.intro h1 {
+  color: #6e9fc6;
+}
+
+.intro p {
+  color: #2766b9;
+  text-align: left;
+  line-height: 2.2;
+  padding: 2em 0;
+}
+
+.intro a {
+  color: #5e97d2;
+}
+
+h2 {
+  color: #6e9fc6;
+  overflow: hidden;
+  text-align: center;
+}
+
+h2:before,
+h2:after {
+  /* background-color: #aeaaad; */
+  background-color: #5e97d2;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+h2:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+h2:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+.project {
+  height: 200px;
+  width: 250px;
+  margin: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project img {
+  height: 100%;
+  width: 100%;
+}
+
+.project a {
+  text-decoration: none;
+}
+
+.project:hover .project-desc {
+  transform: translateY(0);
+}
+
+.project-desc {
+  background: rgba(36, 40, 43, 0.85);
+  height: 100%;
+  width: 100%;
+  padding: 1em;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: 0.4s ease;
+}
+
+.project-desc h3,
+.project-desc p {
+  color: #f6f5f5;
+  text-align: left;
+}
+
+.project-desc h3 {
+  border-bottom: 1px dashed #f6f5f5;
+}
