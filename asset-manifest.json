@@ -1,7 +1,11 @@
 {
-  "main.css": "static/css/main.47dec2f8.css",
-  "main.css.map": "static/css/main.47dec2f8.css.map",
-  "main.js": "static/js/main.9f7b12a6.js",
-  "main.js.map": "static/js/main.9f7b12a6.js.map",
-  "static/media/logo.svg": "static/media/logo.5d5d9eef.svg"
+  "main.css": "static/css/main.e82997d4.css",
+  "main.css.map": "static/css/main.e82997d4.css.map",
+  "main.js": "static/js/main.dd7f06b9.js",
+  "main.js.map": "static/js/main.dd7f06b9.js.map",
+  "static/media/geisel.jpg": "static/media/geisel.b6817846.jpg",
+  "static/media/thumbnail_chess.PNG": "static/media/thumbnail_chess.71764257.PNG",
+  "static/media/thumbnail_cvmaze.PNG": "static/media/thumbnail_cvmaze.a7ab69b3.PNG",
+  "static/media/thumbnail_dejaphoto.png": "static/media/thumbnail_dejaphoto.4d7f0f88.png",
+  "static/media/thumbnail_platformingai.PNG": "static/media/thumbnail_platformingai.a5c1c1db.PNG"
 }
