@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import "./home.css";
-import asdf from "../../assets/images/thumbnail_chess.PNG";
+import chess_img from "../../assets/images/thumbnail_chess.PNG";
+import cvmaze_img from "../../assets/images/thumbnail_cvmaze.PNG";
+import dejaphoto_img from "../../assets/images/thumbnail_dejaphoto.png";
+import platformingai_img from "../../assets/images/thumbnail_platformingai.PNG";
 
 class Home extends Component {
   render() {
@@ -14,7 +17,7 @@ class Home extends Component {
         <main className="home-main">
           <div className="container">
             <section className="intro">
-              <h1>Welcome Text Here</h1>
+              <h1>About Me</h1>
               <p>
                 I'm currently a senior at{" "}
                 <a href="https://ucsd.edu">
@@ -30,40 +33,45 @@ class Home extends Component {
               <h2>Projects</h2>
               <div className="project-container">
                 <Project
-                  img={asdf}
-                  title="Test"
-                  link="https://www.google.com"
-                  desc="Description here"
+                  img=""
+                  title="Chat Analyzer"
+                  link="/chat-analyzer"
+                  desc="A web app for analyzing Facebook chat conversations."
                 />
                 <Project
-                  img={asdf}
-                  title="Test"
-                  link="https://www.google.com"
-                  desc="Description here"
+                  img={dejaphoto_img}
+                  title="Deja Photo"
+                  link="/dejaphoto"
+                  desc="Android app that changes phone wallpaper according to current location, 'karma', and more.
+                  Implements a friends list for users to share photos with each other.
+                  Developed in a team of 6."
                 />
                 <Project
-                  img={asdf}
-                  title="Test"
-                  link="https://www.google.com"
-                  desc="Description here"
+                  img={platformingai_img}
+                  title="Platforming AI"
+                  link="https://github.com/kenbash/Platforming-AI"
+                  desc="Simple platforming game in Python, played by an AI bot that learns through neuroevolution.
+                  Work in progress/abandoned."
                 />
                 <Project
-                  img={asdf}
-                  title="Test"
-                  link="https://www.google.com"
-                  desc="Description here"
+                  img={cvmaze_img}
+                  title="Computer Vision Maze"
+                  link="/cvmaze"
+                  desc="Simple maze game where the player controls their character with their hand."
                 />
                 <Project
-                  img={asdf}
-                  title="Test"
-                  link="https://www.google.com"
-                  desc="Description here"
+                  img=""
+                  title="Image Clusterer"
+                  link="https://github.com/kenbash/Image-Clusterer"
+                  desc="Simple program that uses Spark k-means clustering to cluster an image using its pixel's RGB values"
                 />
                 <Project
-                  img={asdf}
-                  title="Test"
-                  link="https://www.google.com"
-                  desc="Description here"
+                  img={chess_img}
+                  title="Chess"
+                  link="/chess"
+                  desc="Fully playable chess game written in Java.
+                  Also has a simple AI for single player play.
+                  Developed as a fun project in high school while learning how to code."
                 />
               </div>
             </section>

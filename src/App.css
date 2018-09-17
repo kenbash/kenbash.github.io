@@ -18,10 +18,54 @@ h2 {
 .app-footer {
   height: 100px;
   background: #2766b9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-footer a {
+  padding: 0.5em;
+  margin: 1em;
+  color: #f6f5f5;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.app-footer a:hover {
+  transform: translateY(-2px);
+  transition: 0.2s ease;
 }
 
 .not-found h1 {
   color: #f6f5f5;
   font-size: 5em;
   padding: 1.5em;
+}
+
+/* Styles for write-up components */
+.container {
+  max-width: 1000px;
+  text-align: center;
+}
+
+.writeup-header {
+  height: 75px;
+  background: #2766b9;
+}
+
+.writeup-main {
+  background: #f6f5f5;
+}
+
+.writeup-main h1,
+.writeup-main h2 {
+  color: #6e9fc6;
+}
+
+.writeup-main p {
+  color: #2766b9;
+}
+
+.writeup-main a {
+  color: #5e97d2;
 }
