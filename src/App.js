@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import "./App.css";
-import Home from "./components/home/home.js";
-import ChatAnalyzer from "./components/chat-analyzer/chat-analyzer.js";
-import Chess from "./components/chess/chess.js";
-import CVMaze from "./components/cvmaze/cvmaze.js";
-import DejaPhoto from "./components/dejaphoto/dejaphoto.js";
+import Home from "./components/home/Home";
+import ChatAnalyzer from "./components/chat-analyzer/ChatAnalyzer";
+import Chess from "./components/chess/Chess";
+import CVMaze from "./components/cvmaze/CVMaze";
+import DejaPhoto from "./components/dejaphoto/DejaPhoto";
 
 class App extends Component {
   render() {

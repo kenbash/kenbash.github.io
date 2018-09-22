@@ -1,8 +1,11 @@
 import React, { Component } from "react";
-import "./home.css";
+import { Link } from "react-router-dom";
+import "./Home.css";
+import chatanalyzer_img from "../../assets/images/thumbnail_chatanalyzer.PNG";
 import chess_img from "../../assets/images/thumbnail_chess.PNG";
 import cvmaze_img from "../../assets/images/thumbnail_cvmaze.PNG";
 import dejaphoto_img from "../../assets/images/thumbnail_dejaphoto.png";
+import imagecluster_img from "../../assets/images/thumbnail_imagecluster.jpg";
 import platformingai_img from "../../assets/images/thumbnail_platformingai.PNG";
 
 class Home extends Component {
@@ -33,15 +36,17 @@ class Home extends Component {
               <h2>Projects</h2>
               <div className="project-container">
                 <Project
-                  img=""
+                  img={chatanalyzer_img}
                   title="Chat Analyzer"
-                  link="/chat-analyzer"
+                  url="/chat-analyzer"
+                  link={true}
                   desc="A web app for analyzing Facebook chat conversations."
                 />
                 <Project
                   img={dejaphoto_img}
                   title="Deja Photo"
-                  link="/dejaphoto"
+                  url="/dejaphoto"
+                  link={true}
                   desc="Android app that changes phone wallpaper according to current location, 'karma', and more.
                   Implements a friends list for users to share photos with each other.
                   Developed in a team of 6."
@@ -49,26 +54,30 @@ class Home extends Component {
                 <Project
                   img={platformingai_img}
                   title="Platforming AI"
-                  link="https://github.com/kenbash/Platforming-AI"
+                  url="https://github.com/kenbash/Platforming-AI"
+                  link={false}
                   desc="Simple platforming game in Python, played by an AI bot that learns through neuroevolution.
                   Work in progress/abandoned."
                 />
                 <Project
                   img={cvmaze_img}
                   title="Computer Vision Maze"
-                  link="/cvmaze"
+                  url="/cvmaze"
+                  link={true}
                   desc="Simple maze game where the player controls their character with their hand."
                 />
                 <Project
-                  img=""
+                  img={imagecluster_img}
                   title="Image Clusterer"
-                  link="https://github.com/kenbash/Image-Clusterer"
-                  desc="Simple program that uses Spark k-means clustering to cluster an image using its pixel's RGB values"
+                  url="https://github.com/kenbash/Image-Clusterer"
+                  link={false}
+                  desc="Simple program that uses Spark k-means clustering to cluster an image using its pixel's RGB values."
                 />
                 <Project
                   img={chess_img}
                   title="Chess"
-                  link="/chess"
+                  url="/chess"
+                  link={true}
                   desc="Fully playable chess game written in Java.
                   Also has a simple AI for single player play.
                   Developed as a fun project in high school while learning how to code."
@@ -83,13 +92,22 @@ class Home extends Component {
 }
 
 function Project(props) {
+  const description = props.link ? (
+    <Link className="project-desc" to={props.url}>
+      <h3>{props.title}</h3>
+      <p>{props.desc}</p>
+    </Link>
+  ) : (
+    <a className="project-desc" href={props.url}>
+      <h3>{props.title}</h3>
+      <p>{props.desc}</p>
+    </a>
+  );
+
   return (
     <div className="project">
       <img src={props.img} alt={props.title} />
-      <a className="project-desc" href={props.link}>
-        <h3>{props.title}</h3>
-        <p>{props.desc}</p>
-      </a>
+      {description}
     </div>
   );
 }
