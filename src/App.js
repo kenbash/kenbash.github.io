@@ -11,14 +11,21 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/chat-analyzer" component={ChatAnalyzer} />
-          <Route exact path="/chess" component={Chess} />
-          <Route exact path="/cvmaze" component={CVMaze} />
-          <Route exact path="/dejaphoto" component={DejaPhoto} />
-          <Route path="/" component={NotFound} />
-        </Switch>
+        <header className="app-header">
+          <div className="header-top">
+            <h1 className="header-title">Ken Ashley</h1>
+          </div>
+        </header>
+        <main className="app-main">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/chat-analyzer" component={ChatAnalyzer} />
+            <Route exact path="/chess" component={Chess} />
+            <Route exact path="/cvmaze" component={CVMaze} />
+            <Route exact path="/dejaphoto" component={DejaPhoto} />
+            {/* <Route path="/" component={NotFound} /> */}
+          </Switch>
+        </main>
         <footer className="app-footer">
           <a href="https://www.linkedin.com/in/ken-ashley/">LinkedIn</a>
           <a href="https://github.com/kenbash">GitHub</a>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 class DejaPhoto extends Component {
   render() {
     return (
-      <div className="dejaphoto">
+      <div className="writeup dejaphoto">
         <div className="writeup-header" />
         <main className="writeup-main">
           <div className="container">
