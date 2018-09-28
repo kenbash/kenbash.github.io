@@ -1,0 +1,46 @@
+.app-header {
+  height: 350px;
+  width: 100%;
+  color: #f6f5f5;
+}
+
+.app-header:before,
+.app-header:after {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  z-index: -1;
+}
+
+.app-header:before {
+  background: #2766b9 url("../../assets/images/geisel.jpg") no-repeat center
+    center/cover;
+  position: fixed;
+}
+
+.app-header:after {
+  background: #2766b9;
+  opacity: 0.5;
+  position: absolute;
+}
+
+.header-top {
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-title {
+  animation: slide-up 1s ease-out;
+  border: 3px solid #f6f5f5;
+  width: fit-content;
+  padding: 40px;
+  margin-bottom: 0;
+  align-self: flex-end;
+}
