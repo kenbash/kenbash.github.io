@@ -11,19 +11,27 @@ h2 {
   letter-spacing: 0.1em;
 }
 
-/* Styles for write-up components */
 .container {
   max-width: 1000px;
-  text-align: center;
 }
 
+/* Styles for write-up components */
 .writeup {
   background: #f6f5f5;
 }
 
-.writeup h1,
 .writeup h2 {
   color: #6e9fc6;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #5e97d2;
+}
+
+.writeup h3 {
+  color: #2766b9;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .writeup p {
@@ -32,4 +40,21 @@ h2 {
 
 .writeup a {
   color: #5e97d2;
+}
+
+.writeup img {
+  height: auto;
+  width: 350px;
+  margin-bottom: 15px;
+}
+
+.writeup-top {
+  margin-top: 0;
+  padding-top: 40px;
+}
+
+.writeup-home-link p {
+  color: #5e97d2;
+  text-align: center;
+  padding: 20px;
 }

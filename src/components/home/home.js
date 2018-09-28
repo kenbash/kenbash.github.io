@@ -14,7 +14,7 @@ class Home extends Component {
   render() {
     return (
       <div className="home">
-        <Header />
+        <Header title="Ken Ashley" />
         <main className="home-main">
           <div class="container">
             <section className="intro">
@@ -46,7 +46,7 @@ class Home extends Component {
                   url="/dejaphoto"
                   link={true}
                   desc="Android app that changes phone wallpaper according to current location, 'karma', and more.
-                    Implements a friends list for users to share photos with each other.
+                    Implements a friends system for users to share photos with each other.
                     Developed in a team of 6."
                 />
                 <Project
