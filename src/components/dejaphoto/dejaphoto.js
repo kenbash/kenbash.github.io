@@ -82,7 +82,7 @@ class DejaPhoto extends Component {
             </p>
 
             <h3>Photo Options</h3>
-            <img alt="Alternate Photo" src={dejaphoto_alt_img} />
+            <img alt="Alternate" src={dejaphoto_alt_img} />
             <p>
               Here is another photo in Deja Photo. In this, the three buttons
               seen in the previous photo are in different states.{" "}
@@ -139,7 +139,7 @@ class DejaPhoto extends Component {
               determine the next photo.
             </p>
 
-            <img alt="Upload Photo" src={dejaphoto_albums_img} />
+            <img alt="Upload" src={dejaphoto_albums_img} />
             <p>
               After selecting to choose a photo, this screen will open using the
               phone's default album application. After selecting a photo to add,

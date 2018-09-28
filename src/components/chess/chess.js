@@ -28,7 +28,7 @@ class Chess extends Component {
               simple AI as a fun addition to the project.
             </p>
 
-            <a href="http://github.com/kashley920/Chess-Game">
+            <a href="https://github.com/kenbash/Chess-Game">
               Source available here
             </a>
 

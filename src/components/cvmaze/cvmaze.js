@@ -28,7 +28,7 @@ class CVMaze extends Component {
               input.
             </p>
 
-            <a href="http://github.com/kashley920/CV-Maze">
+            <a href="https//github.com/kenbash/CV-Maze">
               Source available here
             </a>
 
