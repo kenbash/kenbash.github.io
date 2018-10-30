@@ -27,7 +27,7 @@ class Home extends Component {
                 studying Mathematics - Computer Science. I also intern part time
                 at <a href="https://www.hologic.com">Hologic, Inc.</a> building
                 full-stack web applications with Angular & .NET Core. I love
-                creating, designing, and solving problems.
+                creating, designing, and problem solving.
               </p>
             </section>
             <section className="projects">
