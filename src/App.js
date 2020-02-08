@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import "./App.css";
-import Home from "./components/home/Home";
-import ChatAnalyzer from "./components/chat-analyzer/ChatAnalyzer";
-import Chess from "./components/chess/Chess";
-import CVMaze from "./components/cvmaze/CVMaze";
-import DejaPhoto from "./components/dejaphoto/DejaPhoto";
+import Home from "./components/home/home";
+import Chess from "./components/chess/chess";
+import CVMaze from "./components/cvmaze/cvmaze";
+import DejaPhoto from "./components/dejaphoto/dejaphoto";
 import NotFound from "./components/not-found/NotFound";
 
 class App extends Component {
@@ -13,7 +12,6 @@ class App extends Component {
     return (
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/chat-analyzer" component={ChatAnalyzer} />
         <Route exact path="/chess" component={Chess} />
         <Route exact path="/cvmaze" component={CVMaze} />
         <Route exact path="/dejaphoto" component={DejaPhoto} />

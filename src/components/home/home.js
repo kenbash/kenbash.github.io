@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Header from "../header/Header.js";
 import Footer from "../footer/Footer.js";
-import "./Home.css";
-import chatanalyzer_img from "../../assets/images/thumbnail_chatanalyzer.PNG";
+import "./home.css";
+import leftovers_img from "../../assets/images/thumbnail_leftovers.PNG";
 import chess_img from "../../assets/images/thumbnail_chess.PNG";
 import cvmaze_img from "../../assets/images/thumbnail_cvmaze.PNG";
 import dejaphoto_img from "../../assets/images/thumbnail_dejaphoto.png";
@@ -20,25 +20,25 @@ class Home extends Component {
             <section className="intro">
               <h1>About Me</h1>
               <p>
-                I'm currently a senior at{" "}
-                <a href="https://ucsd.edu">
-                  University of California, San Diego
-                </a>{" "}
-                studying Mathematics - Computer Science. I also intern part time
+                I'm a software engineer with full experience in all phases of the SDLC, 
+                including architectural spike / analysis, green field development, maintenance,
+                and complete system integration. I earned my B.S. in Mathematics / Computer Science from
+                the <a href="https://ucsd.edu">University of California, San Diego</a> in 2019.
+                I'm currently a member of the Lab Automation team
                 at <a href="https://www.hologic.com">Hologic, Inc.</a> building
-                full-stack web applications with Angular & .NET Core. I love
-                creating, designing, and problem solving.
+                full-stack web applications with Angular & .NET Core.
               </p>
             </section>
             <section className="projects">
               <h2>Projects</h2>
               <div className="project-container">
                 <Project
-                  img={chatanalyzer_img}
-                  title="Chat Analyzer"
-                  url="/chat-analyzer"
-                  link={true}
-                  desc="A web app for analyzing Facebook chat conversations."
+                  img={leftovers_img}
+                  title="Leftovers"
+                  url="https://leftoversapp.io"
+                  link={false}
+                  desc="A full-stack web application for generating practical meal plans and handling user data.
+                    Written in JavaScript using React, Express. Node, and MongoDB."
                 />
                 <Project
                   img={dejaphoto_img}
