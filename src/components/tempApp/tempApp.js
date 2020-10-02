@@ -4,10 +4,10 @@ class TempApp extends Component {
   constructor(props) {
     super(props);
 
+    document.body.style.background = "white";
+
     this.fileReader = new FileReader();
     this.fileReader.onload = e => this.setState({ fileContents: e.target.result });
-
-    document.body.style.background = "white";
 
     this.state = {
       name: "",
@@ -28,7 +28,6 @@ class TempApp extends Component {
     const name = `"${this.state.name}"`;
     let quantity = 0;
 
-    debugger;
     for (let i = 1; i < lines.length; i++) {
       const data = lines[i].split(',');
       if (data[0] === name) {
