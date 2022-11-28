@@ -1,0 +1,28 @@
+body {
+  background: #f5f5f5;
+  padding: 2em;
+  font: normal 16px sans-serif;
+  color: #545454;
+}
+
+.date {
+  text-align: center;
+  margin-top: 20vh;
+}
+
+.date span {
+  position: relative;
+  display: inline-block;
+  font-size: 32px;
+}
+
+.date .flip {
+  animation: flip 3s infinite;
+  animation-delay: calc(.3s * var(--i));
+}
+
+@keyframes flip {
+  0%, 80% {
+    transform: rotateY(360deg);
+  }
+}
