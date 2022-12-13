@@ -50,6 +50,7 @@ body {
 .content-3 {
   position: relative;
   min-height: 20vh;
+  overflow: hidden;
 }
 .content-bg {
   position: absolute;
@@ -69,11 +70,11 @@ body {
 }
 
 .detail {
-  font-size: 3.2vw;
+  font-size: calc(48px + 0.2vw);
   text-align: center;
   text-decoration: none;
   color: #60332D;
-  min-width: 400px;
+  min-width: 450px;
   padding: 0.5em 0;
 }
 
@@ -94,27 +95,28 @@ a.detail:hover {
   border-radius: 250px;
   border: 2px solid #fff;
   margin: 1em;
+  visibility: hidden;
 }
 
-.img-container img.img-1 {
+#img-1 {
   -webkit-animation-delay: 200ms;
           animation-delay: 200ms;
 }
-
-.img-container img.img-2 {
+#img-2 {
   -webkit-animation-delay: 400ms;
           animation-delay: 400ms;
 }
-.img-container img.img-3 {
+#img-3 {
   -webkit-animation-delay: 600ms;
           animation-delay: 600ms;
 }
 
-.footer-text {
-  font-size: 2.4vw;
+#footer-text {
+  font-size: calc(32px + 0.2vw);
   text-align: center;
   width: 100%;
   padding-top: 5vh;
+  visibility: hidden;
 }
 
 .slide-right {
@@ -138,6 +140,7 @@ a.detail:hover {
           animation-delay: 1000ms;
 }
 .slide-up {
+  visibility: visible !important;
   -webkit-animation-name: animate-slide-up;
           animation-name: animate-slide-up;
   -webkit-animation-duration: 1000ms;
@@ -148,6 +151,7 @@ a.detail:hover {
           animation-delay: 1200ms;
 }
 .glow {
+  visibility: visible !important;
   -webkit-animation-name: animate-glow;
           animation-name: animate-glow;
   -webkit-animation-duration: 500ms;
