@@ -1,0 +1,14 @@
+
+.travel-section {
+  padding: 1.5em;
+}
+.travel-section p,
+.travel-section b {
+  text-align: left;
+}
+.travel-section p {
+  margin: 0.25em 0;
+}
+.travel-section p.travel-pad {
+  margin-bottom: 2em;
+}

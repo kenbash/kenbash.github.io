@@ -1,0 +1,12 @@
+.card.faq {
+  padding: 2.5em;
+}
+
+.card.faq p,
+.card.faq b {
+  text-align: left;
+}
+
+.faq-pad {
+  margin-bottom: 2em;
+}

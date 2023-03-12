@@ -1,0 +1,69 @@
+
+@font-face {
+  font-family: "Tan Aegan";
+  src: url(./assets/TAN_AEGEAN_Regular.ttf);
+}
+
+@font-face {
+  font-family: "Arastin Pro";
+  src: url(./assets/Arastin_Pro.ttf);
+}
+
+html {
+  background: url(./assets/background.jpg) no-repeat center center fixed; /* fix this later for large screen sizes */
+  background-size: cover;
+  background-color: #A1A984;
+}
+
+body {
+  font-family: "Tan Aegan";
+  font-size: 12px; /* adjust to 10px, 8px at breakpoints */
+  color: #60332D;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: "Arastin Pro";
+  font-weight: normal;
+  font-size: 4em;
+  letter-spacing: 4px;
+  padding: 0.25em;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Arastin Pro";
+  font-weight: normal;
+  font-size: 3em;
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* My custom styles */
+
+.card {
+  background: #fff;
+  color: #424242;
+  border-radius: 0.5em;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+.card p,
+.card b {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* @media only screen and (min-width: 1045px) {
+  html:not(.cover) {
+    background-size: contain;
+  }  
+} */

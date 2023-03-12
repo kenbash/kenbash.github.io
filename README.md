@@ -1,3 +1,3 @@
 # Wedding Website
 
-WIP
+Website for my wedding
