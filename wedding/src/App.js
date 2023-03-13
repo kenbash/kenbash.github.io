@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import EventInfo from './components/EventInfo';
 import FAQ from './components/FAQ';
@@ -7,53 +7,64 @@ import RSVP from './components/RSVP';
 import Travel from './components/Travel';
 
 function App() {
-  const [nav, setNav] = React.useState(0);
-  
+  const [nav, setNav] = useState(0);
+  const [opacityBg, setOpacityBg] = useState(0);
+
+  useEffect(() => window.scrollTo(0, 0), [nav]);
+
+  const navigate = (i) => {
+    if (nav === i) {
+      window.scrollTo(0, 0);
+    }
+    setOpacityBg(i === 0 ? 0 : 0.5);
+    setNav(i);
+  }
+
   const renderContent = (n) => {
     switch (n) {
       case 1:
-        return <EventInfo />;
+        return <EventInfo setOpacityBg={setOpacityBg} />;
       case 2:
-        return <RSVP />;
+        return <Travel setOpacityBg={setOpacityBg} />;
       case 3:
-        return <Travel />;
+        return <GiftRegistry setOpacityBg={setOpacityBg} />;
       case 4:
-        return <GiftRegistry />;
+        return <FAQ setOpacityBg={setOpacityBg} />;
       case 5:
-        return <FAQ />;
+        return <RSVP setOpacityBg={setOpacityBg} />;
       default:
-        return null;
+        return (<>
+          <h1 className="venue">Edgewood Tahoe</h1>
+          <h1 className="date">09-01-23</h1>
+        </>);
     }
   };
 
-  // document.body.parentElement.classList.add('cover');
-
-  // animate links, names
-
   return (
-    <div className="app-container">
-      <header className="header">
-        <div className="title">
-          <h1>Alyssa + Kenny</h1>
-        </div>
+    <div className={`app-container ${opacityBg === 1.0 ? 'bg-opaque' : ''}`}>
+      <header>
         <div className="nav">
-          <button className="nav-link" onClick={() => setNav(1)}>Details</button>
-          <button className="nav-link" onClick={() => setNav(2)}>RSVP</button>
-          <button className="nav-link" onClick={() => setNav(3)}>Travel</button>
-          <button className="nav-link" onClick={() => setNav(4)}>Registry</button>
-          <button className="nav-link" onClick={() => setNav(5)}>FAQ</button>
+          <button className="nav-link" onClick={() => navigate(1)}>
+            DETAILS
+          </button>
+          <button className="nav-link" onClick={() => navigate(2)}>
+            TRAVEL
+          </button>
+          <h1 onClick={() => navigate(0)}>Alyssa + Kenny</h1>
+          <button className="nav-link" onClick={() => navigate(3)}>
+            REGISTRY
+          </button>
+          <button className="nav-link" onClick={() => navigate(4)}>
+            FAQ
+          </button>
         </div>
       </header>
       <main>
         {renderContent(nav)}
-        {nav > 0 && <div className="green-layer" />}
+        <div className="bg-layer" style={{ opacity: opacityBg }} />
       </main>
       <footer>
-        <span>09/01/2023</span>
-        <span/>
-        <span>
-          <a className="venue-link" href="https://edgewoodtahoe.com/">Edgewood Tahoe, NV</a>
-        </span>
+        {nav !== 5 && <button className="rsvp-btn" onClick={() => navigate(5)}>RSVP</button>}
       </footer>
     </div>
   );

@@ -1,12 +1,38 @@
-.card.faq {
-  padding: 2.5em;
+.qna-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.card.faq p,
-.card.faq b {
-  text-align: left;
+.questions {
+  flex: 1;
+  padding-right: 2em;
 }
 
-.faq-pad {
-  margin-bottom: 2em;
+.question {
+  display: block;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 1em 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: right;
+  text-transform: uppercase;
+  margin-left: auto;
+}
+
+.question.selected {
+  text-decoration: underline;
+}
+
+.answer-box {
+  flex: 1;
+  border-left: 1px solid #424242;
+  padding: 2em;
+}
+.answer-box p {
+  color: #212121;
+  font-size: 2em;
+  margin: 0;
 }

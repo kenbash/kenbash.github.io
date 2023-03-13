@@ -9,8 +9,13 @@
   src: url(./assets/Arastin_Pro.ttf);
 }
 
+@font-face {
+  font-family: "Kulim Park";
+  src: url(./assets/KulimPark-Regular.ttf);
+}
+
 html {
-  background: url(./assets/background.jpg) no-repeat center center fixed; /* fix this later for large screen sizes */
+  background: url(./assets/wedding_bg.png) no-repeat center center fixed; /* fix this later for large screen sizes */
   background-size: cover;
   background-color: #A1A984;
 }
@@ -18,7 +23,7 @@ html {
 body {
   font-family: "Tan Aegan";
   font-size: 12px; /* adjust to 10px, 8px at breakpoints */
-  color: #60332D;
+  color: #7D5A50;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -35,10 +40,29 @@ h1 {
 }
 
 h2 {
-  font-family: "Arastin Pro";
   font-weight: normal;
   font-size: 3em;
   margin: 0;
+  padding: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 2.5em;
+  margin: 0;
+  padding: 0.5em;
+  text-align: center;
+}
+
+a {
+  color: #7D5A50;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 code {
@@ -47,23 +71,54 @@ code {
 
 /* My custom styles */
 
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100vh - 264px);
+  color: #000;
+  text-align: center;
+  margin-bottom: 132px;
+  text-transform: uppercase;
+}
+
+.title h1 {
+  font-family: "Tan Aegan";
+  font-size: 5em;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: normal;
+  padding: 0;
+}
+
 .card {
-  background: #fff;
+  font-family: "Kulim Park", Arial, sans-serif;
   color: #424242;
-  border-radius: 0.5em;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 0 auto 5em;
   padding: 1.5em;
 }
 
 .card p,
 .card b {
-  font-size: 1.5em;
-  text-align: center;
+  font-size: 2em;
 }
 
-/* @media only screen and (min-width: 1045px) {
-  html:not(.cover) {
-    background-size: contain;
-  }  
-} */
+.grow-in {
+  visibility: visible !important;
+  animation-name: animate-grow;
+  animation-duration: 500ms;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animate-grow {
+  0% {
+    opacity: 0;
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}

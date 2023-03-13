@@ -1,14 +1,50 @@
 
 .travel-section {
-  padding: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
 }
-.travel-section p,
-.travel-section b {
-  text-align: left;
+
+.travel-card {
+  flex: 1;
+  padding: 2em 3em;
+  max-width: 24em;
+  min-width: 20em;
+  visibility: hidden;
 }
-.travel-section p {
-  margin: 0.25em 0;
+
+.travel-card.card-border {
+  border-right: 1px solid #424242;
 }
-.travel-section p.travel-pad {
-  margin-bottom: 2em;
+
+.travel-card p,
+.travel-card a {
+  text-align: justify;
+  font-size: 2em;
+  margin: 0;
+}
+
+.travel-card p a {
+  font-size: 1em;
+}
+
+.travel-card.card-1 {
+  animation-delay: 250ms;
+}
+.travel-card.card-2 {
+  animation-delay: 500ms;
+}
+.travel-card.card-3 {
+  animation-delay: 750ms;
+}
+.travel-card.card-4 {
+  animation-delay: 1000ms;
+}
+.travel-card.card-5 {
+  animation-delay: 1250ms;
+}
+
+.section-spacer {
+  margin-top: 3em;
 }
