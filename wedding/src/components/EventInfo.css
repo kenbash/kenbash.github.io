@@ -30,6 +30,6 @@
 }
 
 .detail-location iframe {
-  width: 80vw;
+  width: 100%;
   height: calc(80vh - 240px);
 }
