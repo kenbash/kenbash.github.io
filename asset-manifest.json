@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/kenbash/kenbash.github.io/static/css/main.ce3e4e7c.css",
-    "main.js": "/kenbash/kenbash.github.io/static/js/main.1beaef6a.js",
-    "static/js/787.4ff3cea1.chunk.js": "/kenbash/kenbash.github.io/static/js/787.4ff3cea1.chunk.js",
-    "static/media/wedding_bg.png": "/kenbash/kenbash.github.io/static/media/wedding_bg.77f08d48262633c68510.png",
-    "static/media/TAN_AEGEAN_Regular.ttf": "/kenbash/kenbash.github.io/static/media/TAN_AEGEAN_Regular.5e95f090f7bbde713b05.ttf",
-    "static/media/Arastin_Pro.ttf": "/kenbash/kenbash.github.io/static/media/Arastin_Pro.34301d784d58962aa366.ttf",
-    "static/media/KulimPark-Regular.ttf": "/kenbash/kenbash.github.io/static/media/KulimPark-Regular.e23ce35fddbb092855de.ttf",
-    "index.html": "/kenbash/kenbash.github.io/index.html",
-    "main.ce3e4e7c.css.map": "/kenbash/kenbash.github.io/static/css/main.ce3e4e7c.css.map",
-    "main.1beaef6a.js.map": "/kenbash/kenbash.github.io/static/js/main.1beaef6a.js.map",
-    "787.4ff3cea1.chunk.js.map": "/kenbash/kenbash.github.io/static/js/787.4ff3cea1.chunk.js.map"
+    "main.css": "/static/css/main.1746a35c.css",
+    "main.js": "/static/js/main.6af4e200.js",
+    "static/js/787.4ff3cea1.chunk.js": "/static/js/787.4ff3cea1.chunk.js",
+    "static/media/wedding_bg.png": "/static/media/wedding_bg.77f08d48262633c68510.png",
+    "static/media/TAN_AEGEAN_Regular.ttf": "/static/media/TAN_AEGEAN_Regular.5e95f090f7bbde713b05.ttf",
+    "static/media/Arastin_Pro.ttf": "/static/media/Arastin_Pro.34301d784d58962aa366.ttf",
+    "static/media/KulimPark-Regular.ttf": "/static/media/KulimPark-Regular.e23ce35fddbb092855de.ttf",
+    "index.html": "/index.html",
+    "main.1746a35c.css.map": "/static/css/main.1746a35c.css.map",
+    "main.6af4e200.js.map": "/static/js/main.6af4e200.js.map",
+    "787.4ff3cea1.chunk.js.map": "/static/js/787.4ff3cea1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce3e4e7c.css",
-    "static/js/main.1beaef6a.js"
+    "static/css/main.1746a35c.css",
+    "static/js/main.6af4e200.js"
   ]
 }
