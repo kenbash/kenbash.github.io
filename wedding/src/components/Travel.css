@@ -14,13 +14,15 @@
   visibility: hidden;
 }
 
-.travel-card.card-border {
-  border-right: 1px solid #424242;
+.travel-card.card-1,
+.travel-card.card-3,
+.travel-card.card-4 {
+  border-bottom: 1px solid #424242;
 }
 
 .travel-card p,
 .travel-card a {
-  text-align: justify;
+  text-align: left;
   font-size: 2em;
   margin: 0;
 }
@@ -47,4 +49,13 @@
 
 .section-spacer {
   margin-top: 3em;
+}
+
+@media only screen and (min-width: 702px) {
+  .travel-card.card-1,
+  .travel-card.card-3,
+  .travel-card.card-4 {
+    border-right: 1px solid #424242;
+    border-bottom: none;
+  }
 }
