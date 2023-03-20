@@ -32,19 +32,24 @@
 }
 
 .travel-card.card-1 {
-  animation-delay: 250ms;
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
 }
 .travel-card.card-2 {
-  animation-delay: 500ms;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
 }
 .travel-card.card-3 {
-  animation-delay: 750ms;
+  -webkit-animation-delay: 750ms;
+          animation-delay: 750ms;
 }
 .travel-card.card-4 {
-  animation-delay: 1000ms;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
 }
 .travel-card.card-5 {
-  animation-delay: 1250ms;
+  -webkit-animation-delay: 1250ms;
+          animation-delay: 1250ms;
 }
 
 .section-spacer {

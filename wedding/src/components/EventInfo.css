@@ -15,10 +15,12 @@
 }
 
 .detail-card.card-1 {
-  animation-delay: 250ms;
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
 }
 .detail-card.card-2 {
-  animation-delay: 750ms;
+  -webkit-animation-delay: 750ms;
+          animation-delay: 750ms;
 }
 
 .detail-card h3 {
