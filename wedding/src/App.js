@@ -37,7 +37,9 @@ function App() {
         return <RSVP setOpacityBg={setOpacityBg} />;
       default:
         return (<>
-          <h1 className="venue">Edgewood Tahoe</h1>
+          <h1 className="venue">
+            <a href="https://edgewoodtahoe.com/">Edgewood Tahoe</a>
+          </h1>
           <h1 className="date">09.01.23</h1>
         </>);
     }

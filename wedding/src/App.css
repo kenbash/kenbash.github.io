@@ -1,5 +1,4 @@
 header {
-  /* background: #C29A67; */
   position: fixed;
   text-align: center;
   width: 100%;
@@ -95,6 +94,11 @@ footer {
   bottom: 0;
   display: none;
   font-size: 3em;
+  z-index: 10;
+}
+.venue a {
+  font-size: 1em;
+  color: #fff;
 }
 .date {
   right: 0;
