@@ -4,19 +4,35 @@ import './FAQ.css'
 const QUESTIONS = [
   'Is parking available at the venue?',
   'What is the dress code?',
-  'Can I bring a plus one?',
+  'Can I bring my children?',
+  'Can I bring a guest/date?',
+  'Will the wedding be indoors or outdoors?',
   'I have a dietary restriction, can I make a special request?',
-  'What is the weather like in Tahoe in August?'
+  'What if I forget to RSVP?',
 ];
 
 const ANSWERS = [
   'Yes! Complimentary valet parking is provided at the Edgewood Clubhouse, where the ceremony and reception will take place.',
-  'We ask that everyone in attendance wear formal attire, black tie optional.',
-  'Unless otherwise stated on your invitation, no additional guests will be permitted.',
+  <>
+    {'We would LOVE to see our family and friends get dressed up for our big day! The dress code is formal, black tie optional. ' +
+      'This means no jeans, sneakers, or casual wear. For examples of what to wear, check out these links!'}
+    <br />
+    <a href="https://www.brides.com/story/wedding-dress-code-explained#toc-formal-or-black-tie-optional">
+      Dress Code Explained
+    </a>
+    <br />
+    <a href="https://www.theknot.com/content/wedding-guest-attire-cheat-sheet">Guest Attire Cheat Sheet</a>
+  </>,
+  "We love your little ones! However, we've decided to keep our wedding and reception an adults-only event unless otherwise " +
+    'specified on your invitation. We encourage you to use this as a night to relax, socialize, and dance! Thank you for your understanding!',
+  'If your guest name is listed on your invite when you RSVP, then yes! Your invitation will be made out to "Your Name & Guest" ' +
+    'if a plus one has been given to you. Due to limited space we can only allow the people named on your invitation, so we ask ' +
+    'that you do not bring a guest + we want to keep the wedding as an intimate event with close friends and family! Thank you for your understanding!',
+  'The ceremony will take place outside and the reception will be inside. During cocktail hour, there will be tables outside ' +
+    'for you to enjoy as well. In the case of bad weather, the entire event will be inside.',
   'Yes! Please indicate any dietary restrictions when you RSVP and select your meal option.',
-  'Average daily temperatures are in the high 70s to low 80s. In the evening, those ' +
-    'temperatures can dip into the 40s. We recommend bringing a light jacket or sweater for ' +
-    'the cooler evening temperatures. The ceremony will be outside and the reception will be indoors.',
+  'If you do not RSVP you will unfortunately not be able to attend the wedding. If you were to show up without RSVPing, ' +
+  'there will be no seats for your meal. Make sure you RSVP before the deadline! Thank you!',
 ];
 
 const FAQ = (props) => {
