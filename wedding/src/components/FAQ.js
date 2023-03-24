@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { Fragment, useEffect, useRef, useState } from 'react';
 import './FAQ.css'
 
 const QUESTIONS = [
@@ -39,6 +39,8 @@ const FAQ = (props) => {
   const { setOpacityBg } = props;
   const contentRef = useRef(null);
   const [qIdx, setQIdx] = useState(0);
+  
+  const selectQ = (idx) => setQIdx(idx === qIdx ? -1 : idx);
 
   const observerCb = (entries) => {
     if (entries[0].isIntersecting) setOpacityBg(1);
@@ -64,12 +66,19 @@ const FAQ = (props) => {
         <div className="qna-container">
           <div className="questions">
             {QUESTIONS.map((question, idx) => (
-              <button key={idx} className={`question ${qIdx === idx ? 'selected' : ''}`} onClick={() => setQIdx(idx)}>
-                {question}
-              </button>
+              <Fragment key={idx}>
+                <button className={`question ${qIdx === idx ? 'selected' : ''}`} onClick={() => selectQ(idx)}>
+                  {question}
+                </button>
+                {qIdx === idx && (
+                  <div className="answer-box small">
+                    <p>{ANSWERS[qIdx]}</p>
+                  </div>
+                )}
+              </Fragment>
             ))}
           </div>
-          <div className="answer-box">{<p>{ANSWERS[qIdx]}</p>}</div>
+          <div className="answer-box large">{<p>{ANSWERS[qIdx]}</p>}</div>
         </div>
       </div>
     </div>

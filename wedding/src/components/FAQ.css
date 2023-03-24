@@ -17,9 +17,8 @@
   border: none;
   background: none;
   cursor: pointer;
-  text-align: right;
+  text-align: left;
   text-transform: uppercase;
-  margin-left: auto;
 }
 
 .question.selected {
@@ -27,9 +26,11 @@
 }
 
 .answer-box {
-  flex: 1;
   border-left: 1px solid #424242;
   padding: 2em;
+}
+.answer-box.large {
+  display: none;
 }
 .answer-box p {
   color: #212121;
@@ -38,4 +39,20 @@
 }
 .answer-box p a {
   font-size: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .question {
+    text-align: right;
+    margin-left: auto;
+  }
+  .answer-box.small {
+    display: none;
+  }
+  .answer-box.large {
+    display: block;
+  }
+  .answer-box {
+    flex: 1;
+  }
 }
