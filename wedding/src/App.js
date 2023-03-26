@@ -55,7 +55,7 @@ function App() {
           <button className="nav-link" onClick={() => navigate(2)}>
             TRAVEL
           </button>
-          <h1 onClick={() => navigate(0)}>Alyssa + Kenny</h1>
+          <h1 onClick={() => navigate(0)}>Alyssa & Kenny</h1>
           <button className="nav-link" onClick={() => navigate(3)}>
             REGISTRY
           </button>

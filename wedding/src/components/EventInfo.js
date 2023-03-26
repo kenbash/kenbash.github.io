@@ -38,16 +38,18 @@ function EventInfo(props) {
           <div className={`detail-card card-1${showContent ? ' grow-in' : ''}`}>
             <h1>Ceremony</h1>
             <h3>09 01 23</h3>
-            <p>4:30 in the afternoon</p>
-            <p>Edgewood Tahoe, North Lawn</p>
+            <p>Half Past Four In The Afternoon</p>
+            <p>Edgewood Tahoe Clubhouse, North Lawn</p>
             <p>Stateline, Nevada</p>
+            <p>Black Tie Optional Attire</p>
           </div>
           <div className={`detail-card card-2${showContent ? ' grow-in' : ''}`}>
-            <h1>Reception</h1>
+            <h1>Celebration</h1>
             <h3>09 01 23</h3>
-            <p>Immediately after the ceremony</p>
-            <p>Edgewood Tahoe, Clubhouse</p>
-            <p>Dinner, Drinks, and Dancing!</p>
+            <p>Six In The Evening</p>
+            <p>Edgewood Tahoe Clubhouse</p>
+            <p>Dinner, Drinks, and Dancing</p>
+            <p>Bring Your Dancing Shoes!</p>
           </div>
         </div>
         <div className="detail-location">
