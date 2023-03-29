@@ -7,6 +7,8 @@ import GiftRegistry from './components/GiftRegistry';
 import RSVP from './components/RSVP';
 import Travel from './components/Travel';
 
+const ENABLE_RSVP = false;
+
 function App() {
   const [nav, setNav] = useState(0);
   const [opacityBg, setOpacityBg] = useState(0);
@@ -65,13 +67,13 @@ function App() {
           <button className="nav-btn" onClick={() => setShowMenu(!showMenu)} />
         </div>
       </header>
-      <main>
+      <main className={ENABLE_RSVP && 'rsvp-enabled'}>
         <Menu isOpen={showMenu} handleNav={navigate} closeMenu={() => setShowMenu(false)} />
         {renderContent(nav)}
         <div className="bg-layer" style={{ opacity: opacityBg }} />
       </main>
       <footer>
-        {nav !== 5 && (
+        {nav !== 5 && ENABLE_RSVP && (
           <button className="rsvp-btn" onClick={() => navigate(5)}>
             RSVP
           </button>

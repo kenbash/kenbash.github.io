@@ -93,8 +93,7 @@ footer {
   color: #fff;
   position: fixed;
   bottom: 0;
-  display: none;
-  font-size: 3em;
+  font-size: 1.5em;
   z-index: 10;
 }
 .venue a {
@@ -105,12 +104,21 @@ footer {
   right: 0;
 }
 
+.rsvp-enabled .venue,
+.rsvp-enabled .date {
+  display: none;
+}
+
 @media only screen and (min-width: 480px) {
   h1 {
     font-size: 3em;
   }    
   .title h1 {
     font-size: 4em;
+  }
+  .venue,
+  .date {
+    font-size: 2em;  
   }
 }
 
@@ -136,6 +144,7 @@ footer {
   .venue,
   .date {
     display: initial;
+    font-size: 3em;
   }
 
   .rsvp-btn {
