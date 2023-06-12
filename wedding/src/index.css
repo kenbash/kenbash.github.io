@@ -18,6 +18,10 @@ html {
   background: url(./assets/wedding_bg.png) no-repeat center center fixed;
   background-size: cover;
   background-color: #fff;
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
 }
 
 body {

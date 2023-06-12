@@ -41,6 +41,9 @@ header {
 main {
   padding: 132px 1em;
 }
+main.rsvp {
+  padding-bottom: 0;
+}
 
 .space-filler {
   height: 100vh;

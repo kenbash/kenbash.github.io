@@ -25,7 +25,17 @@ function RSVP(props) {
         <h1>RSVP</h1>
       </div>
       <div className="card" ref={contentRef}>
-        <p style={{ textAlign: 'center' }}>RSVP not available yet. Check back when you've received your invitation!</p>
+        <iframe
+          title="RSVP Form"
+          src="https://alyssasaidyes.rsvpify.com?embed=1"
+          style={{
+            width: '100%',
+            height: '100%',
+            minHeight: '800px',
+            overflow: 'hidden',
+            border: 'none'
+          }}
+        />
       </div>
     </div>
   );
