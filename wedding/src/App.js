@@ -14,6 +14,11 @@ function App() {
   const [opacityBg, setOpacityBg] = useState(0);
   const [showMenu, setShowMenu] = useState(false);
 
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search)
+    if (urlParams.get('rsvp')) setNav(5);
+  }, [])
+
   useEffect(() => window.scrollTo(0, 0), [nav]);
 
   const navigate = (i) => {
