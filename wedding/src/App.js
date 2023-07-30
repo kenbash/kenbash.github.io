@@ -7,7 +7,7 @@ import GiftRegistry from './components/GiftRegistry';
 import RSVP from './components/RSVP';
 import Travel from './components/Travel';
 
-const ENABLE_RSVP = true;
+const ENABLE_RSVP = false;
 
 function App() {
   const [nav, setNav] = useState(0);
@@ -16,7 +16,7 @@ function App() {
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search)
-    if (urlParams.get('rsvp')) setNav(5);
+    if (urlParams.get('rsvp') && ENABLE_RSVP) setNav(5);
   }, [])
 
   useEffect(() => window.scrollTo(0, 0), [nav]);
