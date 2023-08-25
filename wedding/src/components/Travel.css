@@ -56,6 +56,12 @@
   margin-top: 3em;
 }
 
+.clue-link {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
 @media only screen and (min-width: 702px) {
   .travel-card.card-1,
   .travel-card.card-3,

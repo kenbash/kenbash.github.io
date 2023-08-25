@@ -72,6 +72,7 @@ function Travel(props) {
             <p>Look for anything in the South Lake Tahoe or Stateline area. Plenty of beautiful choices available!</p>
           </div>
         </div>
+        <a className="section-spacer clue-link" href="https://mywordle.strivemath.com/?word=xflfp">Clue #4: Tell this person "I do"</a>
       </div>
     </div>
   );
